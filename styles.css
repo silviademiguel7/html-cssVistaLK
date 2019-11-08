@@ -1,0 +1,117 @@
+body{
+  margin:0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-size: 13px;
+  color: #51284f;
+  height: 100vh;
+}
+/*Header*/
+.container_title{
+text-align: left;
+}
+.title{
+  font-size: 24px;
+  color: #7b0b56;
+  margin: 30px 30px 0 30px;
+}
+/*Main*/
+.wrapper{
+  margin: auto;
+  width: 100%;
+  margin: 20px 30px;
+  padding: 10px;
+  border-top: solid 1px #dddddd;
+}
+.container-main{
+  display: flex;
+  
+  align-items: center;
+}
+.circle{
+  font-size: 13px;
+  width: 25px;
+  height: 25px;
+  background-color: #7b0b56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+/*section origen*/
+.container-origen{
+  border-right: solid 1px #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+.container-origen_title{
+  display: flex;
+  align-items: center;
+}
+.title-origen {
+  font-size: 17px;
+  color: #7b0b56;
+}
+.container-origen_main{
+  display: flex;
+}
+.origen_main-iconoCuenta{
+  margin-right: 10px;
+}
+.main-cuenta_title{
+  font-size:13px;
+  font-weight: bold;
+  color:#51284f;
+  margin-top:0px;
+  margin-bottom: 5px;
+}
+.main-cuenta_number{
+  font-size:13px;
+  font-weight: bold;
+  color: #999999;
+  margin-top:0px;
+  margin-bottom: 5px;
+}
+.main-cuenta_saldo{
+  font-size:13px;
+  font-weight: bold;
+  color:#669200;
+  margin-top:0px;
+  margin-bottom: 5px;
+}
+.textSaldo{
+  color:#51284f;
+}
+
+/*section destino*/
+.container-destino{
+  border-right: solid 1px #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+.container-destino_title{
+  display: flex;
+  align-items: center;
+}
+.title-destino {
+  font-size: 17px;
+  color: #7b0b56;
+}
+
+/*section datos*/
+.container-datos{
+  text-align: left;
+  padding: 10px;
+
+}
+.container-datos_title{
+  display: flex;
+  align-items: center;
+}
+.title-datos {
+  font-size: 17px;
+  color: #7b0b56;
+}
