@@ -6,27 +6,32 @@ body{
   color: #51284f;
   height: 100vh;
 }
+a{
+  color:#a50050;
+}
+a:hover{
+  color: #1e0f1d;
+  text-decoration: none;
+}
 /*Header*/
 .container_title{
 text-align: left;
+text-transform: uppercase;
 }
 .title{
   font-size: 24px;
   color: #7b0b56;
-  margin: 30px 30px 0 30px;
+  margin: 30px;
 }
 /*Main*/
 .wrapper{
   margin: auto;
-  width: 100%;
-  margin: 20px 30px;
-  padding: 10px;
-  border-top: solid 1px #dddddd;
+  padding: 20px 30px;
 }
 .container-main{
   display: flex;
-  
-  align-items: center;
+  border-top: solid 1px #dddddd;
+  align-items: flex-start;
 }
 .circle{
   font-size: 13px;
@@ -57,6 +62,10 @@ text-align: left;
 }
 .container-origen_main{
   display: flex;
+  flex-direction: column;
+}
+.origen-cuenta{
+  display: flex;
 }
 .origen_main-iconoCuenta{
   margin-right: 10px;
@@ -77,13 +86,15 @@ text-align: left;
 }
 .main-cuenta_saldo{
   font-size:13px;
-  font-weight: bold;
   color:#669200;
   margin-top:0px;
   margin-bottom: 5px;
 }
 .textSaldo{
   color:#51284f;
+}
+.container-origen_enlace{
+  text-align: right;
 }
 
 /*section destino*/
@@ -100,7 +111,25 @@ text-align: left;
   font-size: 17px;
   color: #7b0b56;
 }
+.list-destino{
+  list-style: none;
+  padding: 0px;
+}
+.list-destino_item{
+  display: flex;
+  justify-content: space-between;
+}
+.destino_item-title{
+  color:#51284f;
+}
+.destino_item-info{
+  font-weight: bold;
+  
+}
 
+.container-destino_enlace{
+  text-align: right;
+}
 /*section datos*/
 .container-datos{
   text-align: left;
