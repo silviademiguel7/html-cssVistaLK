@@ -54,7 +54,8 @@ text-transform: uppercase;
   border-right: solid 1px #dddddd;
   text-align: left;
   padding: 10px;
-  flex-basis: 350px
+  flex-basis: 350px;
+  height: 75vh;
 }
 .container-origen_title{
   display: flex;
@@ -107,7 +108,8 @@ text-transform: uppercase;
   border-right: solid 1px #dddddd;
   text-align: left;
   padding: 10px;
-  flex-basis: 350px
+  flex-basis: 350px;
+  height: 75vh;
 }
 .container-destino_title{
   display: flex;
@@ -162,10 +164,11 @@ text-transform: uppercase;
 .inputImporte {
   position: relative;
   color:#51284f;
+  width: 100%;
 }
 .icono{
   position: absolute;
-  right: 95px;
+  right: 0px;
   top: 5px;
 
 }
@@ -193,17 +196,7 @@ text-transform: uppercase;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.inputRadio{
-  display: flex;
-}
-.inputRadio input[type="radio"] {
 
-}
-.inputRadio input[type="radio"]:checked {
-  border-color: #669200;
-  color:  #669200;
-  content: ;
-}
 .datos_main-conceptoCO{
   display: flex;
   flex-direction: column;
@@ -239,13 +232,18 @@ text-transform: uppercase;
 .label:focus{
   border-color: #66afe9;
 }
+.btn-submit-div{
+  text-align: right;
+}
 
 .btn-submit{
-  color: #8c0044;
-  border-color:#a50050
+  color: white;
+  border-color:#8c0044;
+  background-color:#a50050;
+
 }
 .btn-submit:hover{
   cursor: pointer;
-  color:#720037;
+  background-color:#720037;
   border-color:#4e0026
 }
