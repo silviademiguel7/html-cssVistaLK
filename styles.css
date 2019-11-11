@@ -142,6 +142,10 @@ text-transform: uppercase;
   text-align: right;
 }
 /*section datos*/
+.formulario-datos input:focus{
+  border-color:#66afe9;
+
+}
 .container-datos{
   text-align: left;
   padding: 10px;
