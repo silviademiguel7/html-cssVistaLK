@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/ff7fcb0371.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
     <title>Realizar transferencias y traspasos</title>
   </head>
   <body>
@@ -65,11 +69,50 @@
             <div class="container-datos">
                 <div class="container-datos_title">
                     <div class="circle">3</div>
-                    <h2 class="title-datos">Destino</h2>
+                    <h2 class="title-datos">Datos</h2>
                   </div>
-                  <div class="container-datos_main"></div></div>
+                  <div class="container-datos_main">
+                    <form action="" class="formulario-datos">
+                      <div class="datos_main-importe">
+                        <label for="importe" class="label">Importe</label>
+                        <div class="inputImporte">
+                          <input type="text" id="importe" class="inputImporte"><i class="fas fa-euro-sign icono"></i>
+                        </div>
+                      </div>
+                      <div class="datos_main-periodicidad">
+                        <label for="importe" class="label">Periodicidad</label>
+                        <select id="periodicidad">
+                          <option value="Hoy" selected>Hoy</option>
+                        </select>
+                      </div>
+                      <div class="datos_main-horatransferencia">
+                        <div class="label-hora-trasferencia label">¿Cuando quieres que llegue la transferencia?<div class="icono-informacion">i</div></div>
+                        <div class="inputRadio">
+                          <input type="radio" value="" class="input-radio">Ahora mismmo (24 euros)
+                        </div>
+                        <div class="inputRadio">
+                          <input type="radio" value=""  class="input-radio"> Hoy, hacia las 18:00 (5 Euros)
+                        </div>
+                        <div class="inputRadio">
+                          <input type="radio" value=""  class="input-radio">Mañana (3,50 Euros)
+                        </div>
+                      </div>
+                      <div class="datos_main-conceptoCO">
+                        <label for="conceptoCO" class="label">Concepto de la cuenta origen</label>
+                        <textarea name="concepto" id="conceptoCO" cols="30" rows="3" class="textArea" >TRASPASO A 0010108698</textarea>
+                      </div>
+                      <div class="datos_main-conceptoCD">
+                        <label for="conceptoCD" class="label">Concepto de la cuenta origen</label>
+                        <textarea name="concepto" id="conceptoCD" cols="30" rows="3" class="textArea" maxlength="35">TRASPASO DE 00401690322</textarea>
+                      </div>
+                      <div class="btn-submit-div">
+                        <input type="submit" class="btn-submit" value="Continuar">
+                      </div>
+                    </form>
+                  </div>
             </div>
         </main>
       </div>
+      <script src="https://kit.fontawesome.com/3a06b1c9f7.js" crossorigin="anonymous"></script>
   </body>
 </html>

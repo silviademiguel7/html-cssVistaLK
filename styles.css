@@ -5,9 +5,12 @@ body{
   font-size: 13px;
   color: #51284f;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 a{
   color:#a50050;
+  text-transform: uppercase;
+
 }
 a:hover{
   color: #1e0f1d;
@@ -51,6 +54,7 @@ text-transform: uppercase;
   border-right: solid 1px #dddddd;
   text-align: left;
   padding: 10px;
+  flex-basis: 350px
 }
 .container-origen_title{
   display: flex;
@@ -59,6 +63,7 @@ text-transform: uppercase;
 .title-origen {
   font-size: 17px;
   color: #7b0b56;
+  font-weight: inherit;
 }
 .container-origen_main{
   display: flex;
@@ -102,14 +107,17 @@ text-transform: uppercase;
   border-right: solid 1px #dddddd;
   text-align: left;
   padding: 10px;
+  flex-basis: 350px
 }
 .container-destino_title{
   display: flex;
   align-items: center;
+  
 }
 .title-destino {
   font-size: 17px;
   color: #7b0b56;
+  font-weight: inherit;
 }
 .list-destino{
   list-style: none;
@@ -117,14 +125,14 @@ text-transform: uppercase;
 }
 .list-destino_item{
   display: flex;
-  justify-content: space-between;
 }
 .destino_item-title{
   color:#51284f;
+  margin-right: 50px;
 }
 .destino_item-info{
-  font-weight: bold;
-  
+  font-weight: bold; 
+  text-align: left;
 }
 
 .container-destino_enlace{
@@ -143,4 +151,101 @@ text-transform: uppercase;
 .title-datos {
   font-size: 17px;
   color: #7b0b56;
+  font-weight: inherit;
+}
+.datos_main-importe{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.inputImporte {
+  position: relative;
+  color:#51284f;
+}
+.icono{
+  position: absolute;
+  right: 95px;
+  top: 5px;
+
+}
+.datos_main-periodicidad{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.label-hora-trasferencia{
+  display: flex;
+}
+.icono-informacion{
+ border-radius: 100%;
+ height: 15px;
+ width: 15px;
+ border:solid 1px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 10px;
+ margin-left: 10px;
+}
+.datos_main-horatransferencia{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.inputRadio{
+  display: flex;
+}
+.inputRadio input[type="radio"] {
+
+}
+.inputRadio input[type="radio"]:checked {
+  border-color: #669200;
+  color:  #669200;
+  content: ;
+}
+.datos_main-conceptoCO{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.datos_main-conceptoCD{
+  display: flex;
+  flex-direction: column;
+}
+.btn-submit-div{
+  margin-top:10px;
+}
+.input-radio:checked{
+  color: #669200;;
+}
+.input-radio:hover{
+  cursor: pointer;
+}
+.input-radio{
+  background-color: white;
+  color: #ccc;;
+}
+.textArea{
+  opacity: 0.5;
+}
+.textArea:focus{
+  border-color: #66afe9;
+}
+.label{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.label:focus{
+  border-color: #66afe9;
+}
+
+.btn-submit{
+  color: #8c0044;
+  border-color:#a50050
+}
+.btn-submit:hover{
+  cursor: pointer;
+  color:#720037;
+  border-color:#4e0026
 }
