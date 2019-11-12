@@ -17,14 +17,16 @@ a:hover{
   text-decoration: none;
 }
 /*Header*/
-.container_title{
+.container-header{
 text-align: left;
 text-transform: uppercase;
+padding:30px;
 }
-.title{
+.header-title{
   font-size: 24px;
   color: #7b0b56;
-  margin: 30px;
+  margin: 0px;
+
 }
 /*Main*/
 .wrapper{
@@ -35,6 +37,11 @@ text-transform: uppercase;
   display: flex;
   border-top: solid 1px #dddddd;
   align-items: flex-start;
+}
+
+.container-title{
+  display: flex;
+  align-items: center; 
 }
 .circle{
   font-size: 13px;
@@ -49,140 +56,97 @@ text-transform: uppercase;
   margin-right: 10px;
 }
 
-/*section origen*/
-.container-origen{
-  border-right: solid 1px #dddddd;
+.column{
   text-align: left;
   padding: 10px;
   flex-basis: 350px;
   height: 75vh;
 }
-.container-origen_title{
-  display: flex;
-  align-items: center;
+.column:not(:last-child){
+  border-right: solid 1px #dddddd;
 }
-.title-origen {
+.title {
   font-size: 17px;
   color: #7b0b56;
   font-weight: inherit;
 }
-.container-origen_main{
-  display: flex;
-  flex-direction: column;
-}
-.origen-cuenta{
+/*section origen*/
+container__origen-main
+.origen-main__datos{
   display: flex;
 }
-.origen_main-iconoCuenta{
+.origen-main__datos-iconoCuenta{
   margin-right: 10px;
 }
-.main-cuenta_title{
+.origen-main__datos-cuenta-title{
   font-size:13px;
   font-weight: bold;
   color:#51284f;
   margin-top:0px;
   margin-bottom: 5px;
 }
-.main-cuenta_number{
+.origen-main__datos-cuenta-number{
   font-size:13px;
   font-weight: bold;
   color: #999999;
   margin-top:0px;
   margin-bottom: 5px;
 }
-.main-cuenta_saldo{
+.origen-main__datos-cuenta-saldo{
   font-size:13px;
   color:#669200;
   margin-top:0px;
   margin-bottom: 5px;
 }
-.textSaldo{
+.datos-cuenta-saldo__textSaldo{
   color:#51284f;
 }
-.container-origen_enlace{
+.origen-main__boton{
   text-align: right;
 }
 
 /*section destino*/
-.container-destino{
-  border-right: solid 1px #dddddd;
-  text-align: left;
-  padding: 10px;
-  flex-basis: 350px;
-  height: 75vh;
-}
-.container-destino_title{
-  display: flex;
-  align-items: center;
-  
-}
-.title-destino {
-  font-size: 17px;
-  color: #7b0b56;
-  font-weight: inherit;
-}
-.list-destino{
-  list-style: none;
-  padding: 0px;
-}
-.list-destino_item{
+
+.datos-destino__item{
   display: flex;
 }
-.destino_item-title{
+.datos-destino__item-title{
   color:#51284f;
-  margin-right: 50px;
-  width: 70px;
+  width: 40%;
 }
-.destino_item-info{
+.datos-destino__item-info{
   font-weight: bold; 
   text-align: left;
+  width: 60%
 }
-
-.container-destino_enlace{
+.destino-main__datos-enlace{
   text-align: right;
 }
 /*section datos*/
 .formulario-datos input:focus{
   border-color:#66afe9;
-
 }
-.container-datos{
-  text-align: left;
-  padding: 10px;
-
-}
-.container-datos_title{
-  display: flex;
-  align-items: center;
-}
-.title-datos {
-  font-size: 17px;
-  color: #7b0b56;
-  font-weight: inherit;
-}
-.datos_main-importe{
+.datos-main-importe{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-
-.inputImporte {
+.datos-main-importe__input {
   position: relative;
   color:#51284f;
   width: 100%;
 }
-.icono{
+.icono-euro{
   position: absolute;
   right: 0px;
   top: 5px;
-
 }
-.datos_main-periodicidad{
+.datos-main-periodicidad{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.label-hora-trasferencia{
+.datos-main-horatransferencia_label{
   display: flex;
 }
 .icono-informacion{
@@ -196,31 +160,27 @@ text-transform: uppercase;
  font-size: 10px;
  margin-left: 10px;
 }
-.datos_main-horatransferencia{
+.datos-main-horatransferencia{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-
-.datos_main-conceptoCO{
+.datos-main-conceptoCO{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.datos_main-conceptoCD{
+.datos-main-conceptoCD{
   display: flex;
   flex-direction: column;
 }
-.btn-submit-div{
+.datos-main-btn-submit-div{
   margin-top:10px;
 }
-
-
 .formulario-datos input[type="radio"]{
   display: none;
 } 
 .formulario-datos .inputRadio label{
-
   padding:5px 15px 5px 30px;
   display: inline-block;
   position: relative;
@@ -228,7 +188,6 @@ text-transform: uppercase;
   border-radius: 3px;
   cursor: pointer;
 } 
-
 .formulario-datos .inputRadio label:before{
   content:"";
   width: 17px;
@@ -247,9 +206,7 @@ text-transform: uppercase;
   text-align: center;
   font-size: 15px;
   border:2px solid #669200;
-
 }
-
 .textArea{
   opacity: 0.5;
 }
@@ -266,12 +223,10 @@ text-transform: uppercase;
 .btn-submit-div{
   text-align: right;
 }
-
 .btn-submit{
   color: white;
   border-color:#8c0044;
   background-color:#a50050;
-
 }
 .btn-submit:hover{
   cursor: pointer;

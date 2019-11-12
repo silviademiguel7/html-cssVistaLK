@@ -12,41 +12,41 @@
     <title>Realizar transferencias y traspasos</title>
   </head>
   <body>
-    <header class="container_title">
-      <h1 class="title">Realizar transferencias y traspasos</h1>
+    <header class="container-header">
+      <h1 class="header-title">Realizar transferencias y traspasos</h1>
     </header>
    
       <div class="wrapper">
         <main class="container-main">
-            <div class="container-origen">
-              <div class="container-origen_title">
+            <div class="column">
+              <div class="container-title">
                 <div class="circle">1</div>
-                <h2 class="title-origen">Origen</h2>
+                <h2 class="title">Origen</h2>
               </div>
-              <div class="container-origen_main">
-                <div class="origen-cuenta">
-                    <div class="origen_main-iconoCuenta">
+              <div class="container__origen-main">
+                <div class="origen-main__datos">
+                    <div class="origen-main__datos-iconoCuenta">
                         <img src="cuenta-operativa.svg" alt="icono de cuenta transferencia">
                       </div>
-                      <div class="origen_main-cuenta">
-                        <p class="main-cuenta_title">Cuenta trasferencias 2</p>
-                        <p class="main-cuenta_number">ES30 3035004 91 0040690322</p>
-                        <p class="main-cuenta_saldo"> <span class="textSaldo">Saldo</span> 135.161.05 euros</p>
+                      <div class="origen-main__datos-cuenta">
+                        <p class="origen-main__datos-cuenta-title">Cuenta trasferencias 2</p>
+                        <p class="origen-main__datos-cuenta-number">ES30 3035004 91 0040690322</p>
+                        <p class="origen-main__datos-cuenta-saldo"><span class="datos-cuenta-saldo__textSaldo">Saldo</span> 135.161.05 euros</p>
                       </div>
                 </div>
-                <div class="container-origen_enlace">
+                <div class="origen-main__boton">
                     <a href="" >Cambiar</a>
                 </div>   
               </div>
             </div>
-            <div class="container-destino">
-                <div class="container-destino_title">
+            <div class="column">
+                <div class="container-title">
                     <div class="circle">2</div>
-                    <h2 class="title-destino">Destino</h2>
+                    <h2 class="title">Destino</h2>
                 </div>
-                <div class="container-destino_main">
-                  <div class="conainerList-destino">
-                    <ul class="list-destino">
+                <div class="destino-main__datos">
+                  <div class="destino-main__datos-destino">
+                    <!-- <ul class="list-destino">
                       <li class="list-destino_item">
                         <p class="destino_item-title">Tipo</p>
                         <p class="destino_item-info">Estatal</p>
@@ -59,56 +59,72 @@
                           <p class="destino_item-title">Beneficiario</p>
                           <p class="destino_item-info">sdfjaeiofjasdio</p>
                       </li>
-                    </ul>
+                    </ul> -->
+                    <div class="datos-destino">
+                      <div class="datos-destino__item">
+                        <p class="datos-destino__item-title">Tipo</p>
+                        <p class="datos-destino__item-info">Estatal</p>
+                      </div>
+                      <div class="datos-destino__item">
+                          <p class="datos-destino__item-title">IBAN</p>
+                          <p class="datos-destino__item-info">ES60 1111 1111 11 111111111</p>
+                      </div>
+                      <div class="datos-destino__item">
+                          <p class="datos-destino__item-title">Beneficiario</p>
+                          <p class="datos-destino__item-info">sdfjaeiofjasdio</p>
+                      </div>
+                    </div>
                   </div>
-                    <div class="container-destino_enlace">
+                    <div class="destino-main__datos-enlace">
                         <a href="" >Cambiar</a>
                     </div>
                 </div>
             </div>
-            <div class="container-datos">
-                <div class="container-datos_title">
+            <div class="column">
+                <div class="container-title">
                     <div class="circle">3</div>
-                    <h2 class="title-datos">Datos</h2>
+                    <h2 class="title">Datos</h2>
                   </div>
-                  <div class="container-datos_main">
+                  <div class="datos-main__form">
                     <form action="" class="formulario-datos">
-                      <div class="datos_main-importe">
+                      <div class="datos-main-importe">
                         <label for="importe" class="label">Importe</label>
-                        <div class="inputImporte">
-                          <input type="text" id="importe" class="inputImporte"><i class="fas fa-euro-sign icono"></i>
+                        <div class="datos-main-importe__input">
+                          <input type="text" id="importe" class="datos-main-importe__input" /><i class="fas fa-euro-sign icono-euro"></i>
                         </div>
                       </div>
-                      <div class="datos_main-periodicidad">
+                      <div class="datos-main-periodicidad">
                         <label for="importe" class="label">Periodicidad</label>
                         <select id="periodicidad">
                           <option value="Hoy" selected>Hoy</option>
                         </select>
                       </div>
-                      <label class="datos_main-horatransferencia">
-                        <div class="label-hora-trasferencia label">¿Cuando quieres que llegue la transferencia?<div class="icono-informacion">i</div></div>
+                      <div class="datos-main-horatransferencia">
+                        <div class="datos-main-horatransferencia_label label">¿Cuando quieres que llegue la transferencia?
+                          <div class="icono-informacion">i</div>
+                        </div>
                         <div class="inputRadio" >
-                          <input type="radio" value="" class="input-radio" name="r1" id="radio_style">
+                          <input type="radio" value="" class="input-radio" name="r1" id="radio_style"/>
                           <label for="radio_style">Ahora mismmo (24 euros)</label>
                         </div>
                         <div class="inputRadio" >
-                          <input type="radio" value=""  class="input-radio" name="r1" id="radio_style2"> 
+                          <input type="radio" value=""  class="input-radio" name="r1" id="radio_style2"/> 
                           <label for="radio_style2"> Hoy, hacia las 18:00 (5 Euros)</label>
                         </div>
                         <div class="inputRadio" >
-                          <input type="radio" value=""  class="input-radio" name="r1" id="radio_style3">
+                          <input type="radio" value=""  class="input-radio" name="r1" id="radio_style3"/>
                           <label for="radio_style3">Mañana (3,50 Euros)</label> 
                         </div>
                       </div>
-                      <div class="datos_main-conceptoCO">
+                      <div class="datos-main-conceptoCO">
                         <label for="conceptoCO" class="label">Concepto de la cuenta origen</label>
                         <textarea name="concepto" id="conceptoCO" cols="30" rows="3" class="textArea" >TRASPASO A 0010108698</textarea>
                       </div>
-                      <div class="datos_main-conceptoCD">
+                      <div class="datos-main-conceptoCD">
                         <label for="conceptoCD" class="label">Concepto de la cuenta origen</label>
                         <textarea name="concepto" id="conceptoCD" cols="30" rows="3" class="textArea" maxlength="35">TRASPASO DE 00401690322</textarea>
                       </div>
-                      <div class="btn-submit-div">
+                      <div class="datos-main-btn-submit-div">
                         <input type="submit" class="btn-submit" value="Continuar">
                       </div>
                     </form>
